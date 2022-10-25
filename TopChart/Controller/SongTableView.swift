@@ -9,8 +9,6 @@ import UIKit
 
 class SongTableView: UITableViewController {
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -39,7 +37,17 @@ class SongTableView: UITableViewController {
         
         return UITableViewCell()
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let songUrl = URL(string: SongData[indexPath.row].url) {
+            UIApplication.shared.open(songUrl)
+        }
     }
+    
+   
+    }
+    
     
 
 

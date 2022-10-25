@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 // MARK: - Constants
-fileprivate let feedData: Feed = load("https://rss.applemarketingtools.com/api/v2/tr/music/most-played/10/songs.json")
+fileprivate let feedData: Feed = load("https://rss.applemarketingtools.com/api/v2/tr/music/most-played/50/songs.json")
 
 // MARK: - Global Constants
 let SongData: [Song] = feedData.feed.results

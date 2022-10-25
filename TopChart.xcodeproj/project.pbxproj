@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		604E84BF290825DD002B573C /* HNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604E84BE290825DD002B573C /* HNetworkManager.swift */; };
-		604E84CD29082F4C002B573C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 604E84CC29082F4C002B573C /* Alamofire */; };
 		604E84CF29083038002B573C /* SongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604E84CE29083038002B573C /* SongData.swift */; };
 		60E4D40F29081D480002BC3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E4D40E29081D480002BC3B /* AppDelegate.swift */; };
 		60E4D41129081D480002BC3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E4D41029081D480002BC3B /* SceneDelegate.swift */; };
@@ -21,7 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		604E84BE290825DD002B573C /* HNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNetworkManager.swift; sourceTree = "<group>"; };
 		604E84CE29083038002B573C /* SongData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongData.swift; sourceTree = "<group>"; };
 		60E4D40B29081D480002BC3B /* TopChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E4D40E29081D480002BC3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +37,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				604E84CD29082F4C002B573C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +70,10 @@
 		60E4D40D29081D480002BC3B /* TopChart */ = {
 			isa = PBXGroup;
 			children = (
+				60E4D425290820DC0002BC3B /* Delegate */,
 				60E4D42E2908255E0002BC3B /* Manager */,
 				60E4D427290820F30002BC3B /* Controller */,
 				60E4D426290820EA0002BC3B /* Views */,
-				60E4D425290820DC0002BC3B /* Delegate */,
 				60E4D424290820D50002BC3B /* Model */,
 				60E4D41729081D490002BC3B /* Assets.xcassets */,
 				60E4D41C29081D490002BC3B /* Info.plist */,
@@ -89,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				60E4D428290821380002BC3B /* Song.swift */,
-				604E84CE29083038002B573C /* SongData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,7 +119,7 @@
 		60E4D42E2908255E0002BC3B /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				604E84BE290825DD002B573C /* HNetworkManager.swift */,
+				604E84CE29083038002B573C /* SongData.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -146,7 +141,6 @@
 			);
 			name = TopChart;
 			packageProductDependencies = (
-				604E84CC29082F4C002B573C /* Alamofire */,
 			);
 			productName = TopChart;
 			productReference = 60E4D40B29081D480002BC3B /* TopChart.app */;
@@ -177,7 +171,6 @@
 			);
 			mainGroup = 60E4D40229081D480002BC3B;
 			packageReferences = (
-				604E84CB29082F4C002B573C /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 60E4D40C29081D480002BC3B /* Products */;
 			projectDirPath = "";
@@ -207,7 +200,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				60E4D4232908206D0002BC3B /* SongTableViewCell.swift in Sources */,
-				604E84BF290825DD002B573C /* HNetworkManager.swift in Sources */,
 				60E4D40F29081D480002BC3B /* AppDelegate.swift in Sources */,
 				60E4D42B290821EF0002BC3B /* SongTableView.swift in Sources */,
 				60E4D41129081D480002BC3B /* SceneDelegate.swift in Sources */,
@@ -430,25 +422,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		604E84CB29082F4C002B573C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		604E84CC29082F4C002B573C /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 604E84CB29082F4C002B573C /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 60E4D40329081D480002BC3B /* Project object */;
 }
