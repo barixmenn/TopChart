@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		604E84BF290825DD002B573C /* HNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604E84BE290825DD002B573C /* HNetworkManager.swift */; };
 		604E84C129082606002B573C /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604E84C029082606002B573C /* Contants.swift */; };
+		604E84C329082888002B573C /* SongDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604E84C229082888002B573C /* SongDelegate.swift */; };
+		604E84C5290828A8002B573C /* SongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604E84C4290828A8002B573C /* SongViewModel.swift */; };
 		60E4D40F29081D480002BC3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E4D40E29081D480002BC3B /* AppDelegate.swift */; };
 		60E4D41129081D480002BC3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E4D41029081D480002BC3B /* SceneDelegate.swift */; };
 		60E4D41629081D480002BC3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E4D41429081D480002BC3B /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		604E84BE290825DD002B573C /* HNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNetworkManager.swift; sourceTree = "<group>"; };
 		604E84C029082606002B573C /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
+		604E84C229082888002B573C /* SongDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDelegate.swift; sourceTree = "<group>"; };
+		604E84C4290828A8002B573C /* SongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewModel.swift; sourceTree = "<group>"; };
 		60E4D40B29081D480002BC3B /* TopChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E4D40E29081D480002BC3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60E4D41029081D480002BC3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 			children = (
 				60E4D42A290821EF0002BC3B /* SongTableView.swift */,
 				60E4D4222908206D0002BC3B /* SongTableViewCell.swift */,
+				604E84C229082888002B573C /* SongDelegate.swift */,
+				604E84C4290828A8002B573C /* SongViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,6 +203,8 @@
 				60E4D42B290821EF0002BC3B /* SongTableView.swift in Sources */,
 				60E4D41129081D480002BC3B /* SceneDelegate.swift in Sources */,
 				60E4D429290821380002BC3B /* Song.swift in Sources */,
+				604E84C5290828A8002B573C /* SongViewModel.swift in Sources */,
+				604E84C329082888002B573C /* SongDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
