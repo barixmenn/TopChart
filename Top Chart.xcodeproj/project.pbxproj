@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		604E84CE29083038002B573C /* SongData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongData.swift; sourceTree = "<group>"; };
-		60E4D40B29081D480002BC3B /* TopChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E4D40B29081D480002BC3B /* Top Chart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Chart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E4D40E29081D480002BC3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60E4D41029081D480002BC3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		60E4D41529081D480002BC3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		60E4D40229081D480002BC3B = {
 			isa = PBXGroup;
 			children = (
-				60E4D40D29081D480002BC3B /* TopChart */,
+				60E4D40D29081D480002BC3B /* Top Chart */,
 				60E4D40C29081D480002BC3B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,12 +62,12 @@
 		60E4D40C29081D480002BC3B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				60E4D40B29081D480002BC3B /* TopChart.app */,
+				60E4D40B29081D480002BC3B /* Top Chart.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		60E4D40D29081D480002BC3B /* TopChart */ = {
+		60E4D40D29081D480002BC3B /* Top Chart */ = {
 			isa = PBXGroup;
 			children = (
 				60E4D425290820DC0002BC3B /* Delegate */,
@@ -78,7 +78,7 @@
 				60E4D41729081D490002BC3B /* Assets.xcassets */,
 				60E4D41C29081D490002BC3B /* Info.plist */,
 			);
-			path = TopChart;
+			path = "Top Chart";
 			sourceTree = "<group>";
 		};
 		60E4D424290820D50002BC3B /* Model */ = {
@@ -127,9 +127,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		60E4D40A29081D480002BC3B /* TopChart */ = {
+		60E4D40A29081D480002BC3B /* Top Chart */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60E4D41F29081D490002BC3B /* Build configuration list for PBXNativeTarget "TopChart" */;
+			buildConfigurationList = 60E4D41F29081D490002BC3B /* Build configuration list for PBXNativeTarget "Top Chart" */;
 			buildPhases = (
 				60E4D40729081D480002BC3B /* Sources */,
 				60E4D40829081D480002BC3B /* Frameworks */,
@@ -139,11 +139,11 @@
 			);
 			dependencies = (
 			);
-			name = TopChart;
+			name = "Top Chart";
 			packageProductDependencies = (
 			);
 			productName = TopChart;
-			productReference = 60E4D40B29081D480002BC3B /* TopChart.app */;
+			productReference = 60E4D40B29081D480002BC3B /* Top Chart.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -161,7 +161,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 60E4D40629081D480002BC3B /* Build configuration list for PBXProject "TopChart" */;
+			buildConfigurationList = 60E4D40629081D480002BC3B /* Build configuration list for PBXProject "Top Chart" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -176,7 +176,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				60E4D40A29081D480002BC3B /* TopChart */,
+				60E4D40A29081D480002BC3B /* Top Chart */,
 			);
 		};
 /* End PBXProject section */
@@ -280,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -334,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -353,7 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WL3K4A7DH8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TopChart/Info.plist;
+				INFOPLIST_FILE = "Top Chart/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -381,7 +381,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WL3K4A7DH8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TopChart/Info.plist;
+				INFOPLIST_FILE = "Top Chart/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -403,7 +403,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		60E4D40629081D480002BC3B /* Build configuration list for PBXProject "TopChart" */ = {
+		60E4D40629081D480002BC3B /* Build configuration list for PBXProject "Top Chart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60E4D41D29081D490002BC3B /* Debug */,
@@ -412,7 +412,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60E4D41F29081D490002BC3B /* Build configuration list for PBXNativeTarget "TopChart" */ = {
+		60E4D41F29081D490002BC3B /* Build configuration list for PBXNativeTarget "Top Chart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60E4D42029081D490002BC3B /* Debug */,
