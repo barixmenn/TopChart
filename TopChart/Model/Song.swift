@@ -6,12 +6,10 @@
 //
 
 import Foundation
-
 struct Song: Decodable {
-    //Properties
+    // MARK: - Properties
     let name: String
-    let artistName : String
-    let artworkUrl100: String //artwork
-    let url : String
-    
+    let artistName: String
+    let artworkUrl100: String
+    let url: String
 }

@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		604E84BF290825DD002B573C /* HNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604E84BE290825DD002B573C /* HNetworkManager.swift */; };
-		604E84C129082606002B573C /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604E84C029082606002B573C /* Contants.swift */; };
-		604E84C329082888002B573C /* SongDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604E84C229082888002B573C /* SongDelegate.swift */; };
-		604E84C5290828A8002B573C /* SongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604E84C4290828A8002B573C /* SongViewModel.swift */; };
+		604E84CD29082F4C002B573C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 604E84CC29082F4C002B573C /* Alamofire */; };
+		604E84CF29083038002B573C /* SongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604E84CE29083038002B573C /* SongData.swift */; };
 		60E4D40F29081D480002BC3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E4D40E29081D480002BC3B /* AppDelegate.swift */; };
 		60E4D41129081D480002BC3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E4D41029081D480002BC3B /* SceneDelegate.swift */; };
 		60E4D41629081D480002BC3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E4D41429081D480002BC3B /* Main.storyboard */; };
@@ -23,9 +22,7 @@
 
 /* Begin PBXFileReference section */
 		604E84BE290825DD002B573C /* HNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNetworkManager.swift; sourceTree = "<group>"; };
-		604E84C029082606002B573C /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
-		604E84C229082888002B573C /* SongDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDelegate.swift; sourceTree = "<group>"; };
-		604E84C4290828A8002B573C /* SongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewModel.swift; sourceTree = "<group>"; };
+		604E84CE29083038002B573C /* SongData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongData.swift; sourceTree = "<group>"; };
 		60E4D40B29081D480002BC3B /* TopChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E4D40E29081D480002BC3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60E4D41029081D480002BC3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,12 +40,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604E84CD29082F4C002B573C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		604E84C629082A0D002B573C /* TableProperties */ = {
+			isa = PBXGroup;
+			children = (
+				60E4D4222908206D0002BC3B /* SongTableViewCell.swift */,
+			);
+			path = TableProperties;
+			sourceTree = "<group>";
+		};
 		60E4D40229081D480002BC3B = {
 			isa = PBXGroup;
 			children = (
@@ -75,7 +81,6 @@
 				60E4D424290820D50002BC3B /* Model */,
 				60E4D41729081D490002BC3B /* Assets.xcassets */,
 				60E4D41C29081D490002BC3B /* Info.plist */,
-				604E84C029082606002B573C /* Contants.swift */,
 			);
 			path = TopChart;
 			sourceTree = "<group>";
@@ -84,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				60E4D428290821380002BC3B /* Song.swift */,
+				604E84CE29083038002B573C /* SongData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,10 +115,8 @@
 		60E4D427290820F30002BC3B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				604E84C629082A0D002B573C /* TableProperties */,
 				60E4D42A290821EF0002BC3B /* SongTableView.swift */,
-				60E4D4222908206D0002BC3B /* SongTableViewCell.swift */,
-				604E84C229082888002B573C /* SongDelegate.swift */,
-				604E84C4290828A8002B573C /* SongViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -141,6 +145,9 @@
 			dependencies = (
 			);
 			name = TopChart;
+			packageProductDependencies = (
+				604E84CC29082F4C002B573C /* Alamofire */,
+			);
 			productName = TopChart;
 			productReference = 60E4D40B29081D480002BC3B /* TopChart.app */;
 			productType = "com.apple.product-type.application";
@@ -169,6 +176,9 @@
 				Base,
 			);
 			mainGroup = 60E4D40229081D480002BC3B;
+			packageReferences = (
+				604E84CB29082F4C002B573C /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 60E4D40C29081D480002BC3B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -199,12 +209,10 @@
 				60E4D4232908206D0002BC3B /* SongTableViewCell.swift in Sources */,
 				604E84BF290825DD002B573C /* HNetworkManager.swift in Sources */,
 				60E4D40F29081D480002BC3B /* AppDelegate.swift in Sources */,
-				604E84C129082606002B573C /* Contants.swift in Sources */,
 				60E4D42B290821EF0002BC3B /* SongTableView.swift in Sources */,
 				60E4D41129081D480002BC3B /* SceneDelegate.swift in Sources */,
 				60E4D429290821380002BC3B /* Song.swift in Sources */,
-				604E84C5290828A8002B573C /* SongViewModel.swift in Sources */,
-				604E84C329082888002B573C /* SongDelegate.swift in Sources */,
+				604E84CF29083038002B573C /* SongData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +430,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		604E84CB29082F4C002B573C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		604E84CC29082F4C002B573C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 604E84CB29082F4C002B573C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 60E4D40329081D480002BC3B /* Project object */;
 }
