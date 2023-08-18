@@ -29,9 +29,9 @@ extension EndPoint: EndPointProtocol {
     var path: String {
         switch self {
         case .turkeyTopMusic:
-            return "/api/v2/tr/music/most-played/50/songs.json"
+            return "/api/v2/tr/music/most-played/25/songs.json"
         case .globalTopMusic:
-            return "/api/v2/global/music/most-played/50/songs.json"
+            return "/api/v2/us/music/most-played/25/songs.json"
         }
     }
     

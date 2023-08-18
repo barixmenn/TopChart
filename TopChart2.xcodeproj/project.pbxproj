@@ -15,6 +15,8 @@
 		D01348BD2A902A3A0092D2F5 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01348BC2A902A3A0092D2F5 /* HTTPMethod.swift */; };
 		D01348BF2A902A640092D2F5 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01348BE2A902A640092D2F5 /* EndPoint.swift */; };
 		D01348C52A902C7D0092D2F5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01348C42A902C7D0092D2F5 /* Constant.swift */; };
+		D01348C72A902D630092D2F5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01348C62A902D630092D2F5 /* NetworkManager.swift */; };
+		D0C240FA2A902E8400C1A218 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C240F92A902E8300C1A218 /* Song.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		D01348BC2A902A3A0092D2F5 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		D01348BE2A902A640092D2F5 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		D01348C42A902C7D0092D2F5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D01348C62A902D630092D2F5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D0C240F92A902E8300C1A218 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 		D01348B92A90299D0092D2F5 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				D0C240F82A902E7B00C1A218 /* Model */,
 				D01348BA2A9029FE0092D2F5 /* Core */,
 			);
 			path = Network;
@@ -101,6 +106,7 @@
 			children = (
 				D01348BB2A902A2B0092D2F5 /* HTTP */,
 				D01348BE2A902A640092D2F5 /* EndPoint.swift */,
+				D01348C62A902D630092D2F5 /* NetworkManager.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -119,6 +125,14 @@
 				D01348C42A902C7D0092D2F5 /* Constant.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		D0C240F82A902E7B00C1A218 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0C240F92A902E8300C1A218 /* Song.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +208,8 @@
 				D01348BD2A902A3A0092D2F5 /* HTTPMethod.swift in Sources */,
 				D01348A82A90283C0092D2F5 /* ViewController.swift in Sources */,
 				D01348BF2A902A640092D2F5 /* EndPoint.swift in Sources */,
+				D01348C72A902D630092D2F5 /* NetworkManager.swift in Sources */,
+				D0C240FA2A902E8400C1A218 /* Song.swift in Sources */,
 				D01348A42A90283C0092D2F5 /* AppDelegate.swift in Sources */,
 				D01348A62A90283C0092D2F5 /* SceneDelegate.swift in Sources */,
 				D01348C52A902C7D0092D2F5 /* Constant.swift in Sources */,
