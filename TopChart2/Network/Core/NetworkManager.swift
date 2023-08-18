@@ -40,12 +40,12 @@ class NetworkManager {
         task.resume()
     }
     
-    func getGlobalMusic(completion: @escaping (Swift.Result<Song,Error>) -> Void) {
+    func getGlobalMusic(completion: @escaping (Swift.Result<AlbumResponse,Error>) -> Void) {
         let endPoint = EndPoint.globalTopMusic
         request(endPoint, completion: completion)
     }
     
-    func getTurkeyMusic(completion: @escaping (Swift.Result<Song,Error>) -> Void) {
+    func getTurkeyMusic(completion: @escaping (Swift.Result<AlbumResponse,Error>) -> Void) {
         let endPoint = EndPoint.turkeyTopMusic
         request(endPoint, completion: completion)
     }

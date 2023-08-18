@@ -36,12 +36,7 @@ extension EndPoint: EndPointProtocol {
     }
     
     var method: HTTPMethodType {
-        switch self {
-        case .globalTopMusic:
-            return .get
-        case .turkeyTopMusic:
-            return .get
-        }
+        return .get
     }
     
     var header: [String : String]? {
