@@ -16,6 +16,7 @@
 		D01348BF2A902A640092D2F5 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01348BE2A902A640092D2F5 /* EndPoint.swift */; };
 		D01348C52A902C7D0092D2F5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01348C42A902C7D0092D2F5 /* Constant.swift */; };
 		D01348C72A902D630092D2F5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01348C62A902D630092D2F5 /* NetworkManager.swift */; };
+		D01D21CC2A90BD0C0024ED64 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01D21CB2A90BD0C0024ED64 /* HomeViewModel.swift */; };
 		D0C240FA2A902E8400C1A218 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C240F92A902E8300C1A218 /* Song.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		D01348BE2A902A640092D2F5 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		D01348C42A902C7D0092D2F5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		D01348C62A902D630092D2F5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D01D21CB2A90BD0C0024ED64 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D0C240F92A902E8300C1A218 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,8 @@
 		D01348B72A90298B0092D2F5 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				D01D21CA2A90BCFE0024ED64 /* ViewModel */,
+				D01D21C92A90BCF90024ED64 /* Home */,
 				D01348A72A90283C0092D2F5 /* ViewController.swift */,
 			);
 			path = Scene;
@@ -125,6 +129,21 @@
 				D01348C42A902C7D0092D2F5 /* Constant.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		D01D21C92A90BCF90024ED64 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D01D21CA2A90BCFE0024ED64 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D01D21CB2A90BD0C0024ED64 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D0C240F82A902E7B00C1A218 /* Model */ = {
@@ -206,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D01348BD2A902A3A0092D2F5 /* HTTPMethod.swift in Sources */,
+				D01D21CC2A90BD0C0024ED64 /* HomeViewModel.swift in Sources */,
 				D01348A82A90283C0092D2F5 /* ViewController.swift in Sources */,
 				D01348BF2A902A640092D2F5 /* EndPoint.swift in Sources */,
 				D01348C72A902D630092D2F5 /* NetworkManager.swift in Sources */,
