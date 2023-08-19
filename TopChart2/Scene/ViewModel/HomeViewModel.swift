@@ -16,7 +16,8 @@ final class HomeViewModel {
     var delegate : IHomeViewModel?
     private let manager = NetworkManager.shared
     
-    var song: AlbumResponse?
+    var turkey: AlbumResponse?
+    var global: AlbumResponse?
 }
 
 extension HomeViewModel {
@@ -25,7 +26,7 @@ extension HomeViewModel {
         manager.getTurkeyMusic { result in
             switch result {
             case .success(let success):
-                self.song = success
+                self.turkey = success
                 self.delegate?.didSuccess()
             case .failure(let failure):
                 print(failure.localizedDescription)
@@ -38,7 +39,7 @@ extension HomeViewModel {
         manager.getGlobalMusic { result in
             switch result {
             case .success(let success):
-                self.song = success
+                self.global = success
                 self.delegate?.didSuccess()
             case .failure(let failure):
                 print(failure.localizedDescription)
