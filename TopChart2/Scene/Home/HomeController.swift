@@ -8,7 +8,7 @@ import UIKit
 
 private let resuseIdentifier = "cell"
 class HomeController: UIViewController {
-
+    
     //MARK: - UI Elements
     
     let mySegmentedControl : UISegmentedControl = {
@@ -42,14 +42,20 @@ class HomeController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+}
 
+//MARK: - Helper
+extension HomeController {
+    
     //MARK: - UI Styling
     private func style() {
         view.addSubview(mySegmentedControl)
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: resuseIdentifier)
- 
+        tableView.register(UINib(nibName: "SongCell", bundle: nil), forCellReuseIdentifier: resuseIdentifier)
+        
     }
     
     //MARK: - Autolayout
@@ -67,8 +73,7 @@ class HomeController: UIViewController {
         ])
     }
 }
-
-
+//MARK: - Service
 extension HomeController: IHomeViewModel {
     func didErrorList(error: String) {
         print("Error")
@@ -86,7 +91,7 @@ extension HomeController: IHomeViewModel {
             self.tableView.reloadData()
         }
     }
-    }
+}
 
 
 //MARK: - TableViewDelegate - UITableViewDataSource
@@ -108,17 +113,45 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let global = viewModel.global?.feed.results[indexPath.row]
         let turkey = viewModel.turkey?.feed.results[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: resuseIdentifier, for: indexPath)
+        
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: resuseIdentifier, for: indexPath) as! SongCell
         
         switch mySegmentedControl.selectedSegmentIndex {
         case 0:
-            cell.textLabel?.text = turkey?.name
+            cell.artistName.text = turkey?.artistName
+            cell.songName.text = turkey?.name
+            
+            if let imageURL = URL(string: turkey?.artworkUrl100 ?? "") {
+                if let imageData = try? Data(contentsOf: imageURL) {
+                    cell.songImage.image = UIImage(data: imageData)
+                } else {
+                    cell.songImage.image = nil
+                }
+            } else {
+                cell.songImage.image = nil
+            }
+            return cell
+            
         case 1:
-            cell.textLabel?.text = global?.name
+            cell.artistName.text = global?.artistName
+            cell.songName.text = global?.name
+            
+            if let imageURL = URL(string: global?.artworkUrl100 ?? "") {
+                if let imageData = try? Data(contentsOf: imageURL) {
+                    cell.songImage.image = UIImage(data: imageData)
+                } else {
+                    cell.songImage.image = nil
+                }
+            } else {
+                cell.songImage.image = nil
+            }
+            return cell
+            
             
         default:
             print("cellForRowAt error")
         }
-        return cell
+        return UITableViewCell()
     }
 }
